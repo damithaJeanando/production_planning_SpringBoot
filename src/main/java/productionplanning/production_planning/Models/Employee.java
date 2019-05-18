@@ -1,5 +1,6 @@
 package productionplanning.production_planning.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
@@ -7,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 public class Employee {
@@ -24,12 +26,26 @@ public class Employee {
     private String username;
     private String password;
 
-    @OneToMany
-    private WorkSchedule workSchedule;
+    @OneToMany(mappedBy = "empId")
+    @JsonIgnoreProperties("empId")
+    private Set<WorkSchedule> workSchedules;
 
-    @OneToMany
-    private Inspection inspection;
+    @OneToMany(mappedBy = "empId")
+    @JsonIgnoreProperties("empId")
+    private Set<Inspection> inspections;
 
+    public Employee(String name, Date dob, String address, int contactNum, String empType, String username,
+                    String password, Set<WorkSchedule> workSchedules, Set<Inspection> inspections) {
+        this.name = name;
+        this.dob = dob;
+        this.address = address;
+        this.contactNum = contactNum;
+        this.empType = empType;
+        this.username = username;
+        this.password = password;
+        this.workSchedules = workSchedules;
+        this.inspections = inspections;
+    }
 
     public String getEmpId() {
         return empId;
@@ -95,19 +111,19 @@ public class Employee {
         this.password = password;
     }
 
-    public WorkSchedule getWorkSchedule() {
-        return workSchedule;
+    public Set<WorkSchedule> getWorkSchedules() {
+        return workSchedules;
     }
 
-    public void setWorkSchedule(WorkSchedule workSchedule) {
-        this.workSchedule = workSchedule;
+    public void setWorkSchedules(Set<WorkSchedule> workSchedules) {
+        this.workSchedules = workSchedules;
     }
 
-    public Inspection getInspection() {
-        return inspection;
+    public Set<Inspection> getInspections() {
+        return inspections;
     }
 
-    public void setInspection(Inspection inspection) {
-        this.inspection = inspection;
+    public void setInspections(Set<Inspection> inspections) {
+        this.inspections = inspections;
     }
 }

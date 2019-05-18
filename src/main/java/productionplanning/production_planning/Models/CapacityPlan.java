@@ -1,5 +1,6 @@
 package productionplanning.production_planning.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
@@ -7,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 public class CapacityPlan {
@@ -19,13 +21,14 @@ public class CapacityPlan {
     private Date startDate;
     private Date endDate;
 
-    @OneToMany
-    private WorkSchedule workSchedule;
+    @OneToMany(mappedBy = "planId")
+    @JsonIgnoreProperties("planId")
+    private Set<WorkSchedule> workSchedules;
 
-    public CapacityPlan(Date startDate, Date endDate, WorkSchedule workSchedule) {
+    public CapacityPlan(Date startDate, Date endDate, Set<WorkSchedule> workSchedules) {
         this.startDate = startDate;
         this.endDate = endDate;
-        this.workSchedule = workSchedule;
+        this.workSchedules = workSchedules;
     }
 
     public String getPlanId() {
@@ -52,11 +55,11 @@ public class CapacityPlan {
         this.endDate = endDate;
     }
 
-    public WorkSchedule getWorkSchedule() {
-        return workSchedule;
+    public Set<WorkSchedule> getWorkSchedules() {
+        return workSchedules;
     }
 
-    public void setWorkSchedule(WorkSchedule workSchedule) {
-        this.workSchedule = workSchedule;
+    public void setWorkSchedules(Set<WorkSchedule> workSchedules) {
+        this.workSchedules = workSchedules;
     }
 }

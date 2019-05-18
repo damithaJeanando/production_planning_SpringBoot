@@ -18,6 +18,7 @@ public class WorkSchedule {
     @GenericGenerator(name="system-uuid",strategy = "uuid")
     private String scheduleId;
 
+
     private Timestamp startDate;
     private Timestamp endDate;
     private Date date;
