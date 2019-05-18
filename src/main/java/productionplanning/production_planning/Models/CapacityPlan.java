@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Date;
 
 @Entity
@@ -17,6 +18,15 @@ public class CapacityPlan {
 
     private Date startDate;
     private Date endDate;
+
+    @OneToMany
+    private WorkSchedule workSchedule;
+
+    public CapacityPlan(Date startDate, Date endDate, WorkSchedule workSchedule) {
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.workSchedule = workSchedule;
+    }
 
     public String getPlanId() {
         return planId;
@@ -40,5 +50,13 @@ public class CapacityPlan {
 
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
+    }
+
+    public WorkSchedule getWorkSchedule() {
+        return workSchedule;
+    }
+
+    public void setWorkSchedule(WorkSchedule workSchedule) {
+        this.workSchedule = workSchedule;
     }
 }

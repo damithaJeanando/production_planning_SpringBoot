@@ -5,6 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Date;
 
 @Entity
@@ -22,6 +23,13 @@ public class Employee {
     private String empType;
     private String username;
     private String password;
+
+    @OneToMany
+    private WorkSchedule workSchedule;
+
+    @OneToMany
+    private Inspection inspection;
+
 
     public String getEmpId() {
         return empId;
@@ -85,5 +93,21 @@ public class Employee {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public WorkSchedule getWorkSchedule() {
+        return workSchedule;
+    }
+
+    public void setWorkSchedule(WorkSchedule workSchedule) {
+        this.workSchedule = workSchedule;
+    }
+
+    public Inspection getInspection() {
+        return inspection;
+    }
+
+    public void setInspection(Inspection inspection) {
+        this.inspection = inspection;
     }
 }
