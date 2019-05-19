@@ -25,21 +25,21 @@ public class RNStatusController {
     }
 
     @PostMapping(path = "/new_rnStatus")
-    public RNStatus newRejectionNotice(@RequestBody RNStatus rnStatus){
+    public RNStatus newRNStatus(@RequestBody RNStatus rnStatus){
 
 
         return rnStatusRepository.save(rnStatus);
     }
 
     @PutMapping
-    public void updateRejectionNotice(@RequestBody RNStatus rnStatus){
+    public void updateRNStatus(@RequestBody RNStatus rnStatus){
 
         rnStatusRepository.save(rnStatus);
 
     }
 
     @DeleteMapping(path = "/{rnStatus_id}")
-    public void deleteRejectionNotice(@PathVariable String rnStatus_id) {
+    public void deleteRNStatus(@PathVariable String rnStatus_id) {
 
         rnStatusRepository.deleteById(rnStatus_id);
     }
