@@ -5,7 +5,7 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-public class ProductDesignItem {
+public class PDItem {
 
     @Id
     @GeneratedValue(generator = "system-uuid")
@@ -20,7 +20,7 @@ public class ProductDesignItem {
     @OneToOne
     private RawMaterials materialId;
 
-    public ProductDesignItem(int quantity, ProductDesign productDesign, RawMaterials materialId) {
+    public PDItem(int quantity, ProductDesign productDesign, RawMaterials materialId) {
         this.quantity = quantity;
         this.productDesign = productDesign;
         this.materialId = materialId;

@@ -21,15 +21,15 @@ public class RejectionNotice {
     private OrderItem orderItemId;
 
     @ManyToOne
-    private NoticeStatus noticeStatus;
+    private RNStatus rnStatus;
 
     public RejectionNotice(String getRejectionReason, Date noticeDate, String remedyAction, OrderItem orderItemId,
-                           NoticeStatus noticeStatus) {
+                           RNStatus rnStatus) {
         this.getRejectionReason = getRejectionReason;
         this.noticeDate = noticeDate;
         this.remedyAction = remedyAction;
         this.orderItemId = orderItemId;
-        this.noticeStatus = noticeStatus;
+        this.rnStatus = rnStatus;
     }
 
     public String getRejectionNoticeId() {
@@ -72,11 +72,11 @@ public class RejectionNotice {
         this.orderItemId = orderItemId;
     }
 
-    public NoticeStatus getNoticeStatus() {
-        return noticeStatus;
+    public RNStatus getRnStatus() {
+        return rnStatus;
     }
 
-    public void setNoticeStatus(NoticeStatus noticeStatus) {
-        this.noticeStatus = noticeStatus;
+    public void setRnStatus(RNStatus rnStatus) {
+        this.rnStatus = rnStatus;
     }
 }

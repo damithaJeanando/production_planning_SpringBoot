@@ -21,13 +21,13 @@ public class BillItem {
     private BOM bomId;
 
     @ManyToOne
-    private BillItemStatus billItemStatus;
+    private BIStatus BIStatus;
 
-    public BillItem(int quantity, RawMaterials materialId, BOM bomId, BillItemStatus billItemStatus) {
+    public BillItem(int quantity, RawMaterials materialId, BOM bomId, BIStatus BIStatus) {
         this.quantity = quantity;
         this.materialId = materialId;
         this.bomId = bomId;
-        this.billItemStatus = billItemStatus;
+        this.BIStatus = BIStatus;
     }
 
     public String getBillItemId() {
@@ -62,11 +62,11 @@ public class BillItem {
         this.bomId = bomId;
     }
 
-    public BillItemStatus getBillItemStatus() {
-        return billItemStatus;
+    public BIStatus getBIStatus() {
+        return BIStatus;
     }
 
-    public void setBillItemStatus(BillItemStatus billItemStatus) {
-        this.billItemStatus = billItemStatus;
+    public void setBIStatus(BIStatus BIStatus) {
+        this.BIStatus = BIStatus;
     }
 }

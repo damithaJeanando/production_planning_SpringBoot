@@ -19,7 +19,7 @@ public class RejectionNoticeController {
     }
 
     @GetMapping(path = "/{rn_id}")
-    public RejectionNotice getProduct(@PathVariable String rn_id){
+    public RejectionNotice getRejectionNotice(@PathVariable String rn_id){
 
         return rejectionNoticeRepository.findById(rn_id).get();
     }

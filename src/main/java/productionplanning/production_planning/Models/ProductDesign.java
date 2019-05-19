@@ -21,12 +21,12 @@ public class ProductDesign {
 
     @OneToMany(mappedBy = "designId")
     @JsonIgnoreProperties("designId")
-    private Set<ProductDesignItem> productDesignItems;
+    private Set<PDItem> PDItems;
 
-    public ProductDesign(int requiredWorkHours, Product productid, Set<ProductDesignItem> productDesignItems) {
+    public ProductDesign(int requiredWorkHours, Product productid, Set<PDItem> PDItems) {
         this.requiredWorkHours = requiredWorkHours;
         this.productid = productid;
-        this.productDesignItems = productDesignItems;
+        this.PDItems = PDItems;
     }
 
     public String getDesignId() {
@@ -53,11 +53,11 @@ public class ProductDesign {
         this.productid = productid;
     }
 
-    public Set<ProductDesignItem> getProductDesignItems() {
-        return productDesignItems;
+    public Set<PDItem> getPDItems() {
+        return PDItems;
     }
 
-    public void setProductDesignItems(Set<ProductDesignItem> productDesignItems) {
-        this.productDesignItems = productDesignItems;
+    public void setPDItems(Set<PDItem> PDItems) {
+        this.PDItems = PDItems;
     }
 }
