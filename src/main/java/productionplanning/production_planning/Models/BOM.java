@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.Set;
 
 @Entity
-public class BillOfMaterials {
+public class BOM {
 
     @Id
     @GeneratedValue(generator = "system-uuid")
@@ -24,7 +24,7 @@ public class BillOfMaterials {
     @JsonIgnoreProperties("bomId")
     private Set<BillItem> billItems;
 
-    public BillOfMaterials(String bomId, Date createdDate, OrderItem orderItemId, Set<BillItem> billItems) {
+    public BOM(String bomId, Date createdDate, OrderItem orderItemId, Set<BillItem> billItems) {
         this.bomId = bomId;
         this.createdDate = createdDate;
         this.orderItemId = orderItemId;

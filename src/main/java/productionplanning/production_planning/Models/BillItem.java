@@ -18,12 +18,12 @@ public class BillItem {
     private RawMaterials materialId;
 
     @ManyToOne
-    private BillOfMaterials bomId;
+    private BOM bomId;
 
     @ManyToOne
     private BillItemStatus billItemStatus;
 
-    public BillItem(int quantity, RawMaterials materialId, BillOfMaterials bomId, BillItemStatus billItemStatus) {
+    public BillItem(int quantity, RawMaterials materialId, BOM bomId, BillItemStatus billItemStatus) {
         this.quantity = quantity;
         this.materialId = materialId;
         this.bomId = bomId;
@@ -54,11 +54,11 @@ public class BillItem {
         this.materialId = materialId;
     }
 
-    public BillOfMaterials getBomId() {
+    public BOM getBomId() {
         return bomId;
     }
 
-    public void setBomId(BillOfMaterials bomId) {
+    public void setBomId(BOM bomId) {
         this.bomId = bomId;
     }
 
