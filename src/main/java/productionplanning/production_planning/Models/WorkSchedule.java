@@ -7,7 +7,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.sql.Date;
-import java.sql.Timestamp;
 
 @Entity
 public class WorkSchedule {
@@ -19,8 +18,8 @@ public class WorkSchedule {
     private String scheduleId;
 
 
-    private Timestamp startDate;
-    private Timestamp endDate;
+    private String startTime;
+    private String endTime;
     private Date date;
 
     @ManyToOne
@@ -35,10 +34,10 @@ public class WorkSchedule {
     @ManyToOne
     private OrderItem orderItemId;
 
-    public WorkSchedule(Timestamp startDate, Timestamp endDate, Date date, Employee empId,
+    public WorkSchedule(String startTime, String endTime, Date date, Employee empId,
                         CapacityPlan planId, LeaveType leaveType, OrderItem orderItemId) {
-        this.startDate = startDate;
-        this.endDate = endDate;
+        this.startTime = startTime;
+        this.endTime = endTime;
         this.date = date;
         this.empId = empId;
         this.planId = planId;
@@ -54,20 +53,20 @@ public class WorkSchedule {
         this.scheduleId = scheduleId;
     }
 
-    public Timestamp getStartDate() {
-        return startDate;
+    public String getStartTime() {
+        return startTime;
     }
 
-    public void setStartDate(Timestamp startDate) {
-        this.startDate = startDate;
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
     }
 
-    public Timestamp getEndDate() {
-        return endDate;
+    public String getEndTime() {
+        return endTime;
     }
 
-    public void setEndDate(Timestamp endDate) {
-        this.endDate = endDate;
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
     }
 
     public Date getDate() {

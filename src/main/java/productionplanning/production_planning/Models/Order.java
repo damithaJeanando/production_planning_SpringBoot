@@ -15,7 +15,7 @@ public class Order {
     @GenericGenerator(name="system-uuid",strategy = "uuid")
     private String orderId;
 
-    private Date orderDeadLine;
+    private Date orderDeadline;
     private Date startDate;
     private Date endDate;
 
@@ -23,8 +23,8 @@ public class Order {
     @JsonIgnoreProperties("orderId")
     private Set<OrderItem> orderItems;
 
-    public Order(Date orderDeadLine, Date startDate, Date endDate, Set<OrderItem> orderItems) {
-        this.orderDeadLine = orderDeadLine;
+    public Order(Date orderDeadline, Date startDate, Date endDate, Set<OrderItem> orderItems) {
+        this.orderDeadline = orderDeadline;
         this.startDate = startDate;
         this.endDate = endDate;
         this.orderItems = orderItems;
@@ -39,12 +39,12 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public Date getOrderDeadLine() {
-        return orderDeadLine;
+    public Date getOrderDeadline() {
+        return orderDeadline;
     }
 
-    public void setOrderDeadLine(Date orderDeadLine) {
-        this.orderDeadLine = orderDeadLine;
+    public void setOrderDeadline(Date orderDeadline) {
+        this.orderDeadline = orderDeadline;
     }
 
     public Date getStartDate() {

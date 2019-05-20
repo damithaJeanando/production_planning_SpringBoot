@@ -3,7 +3,6 @@ package productionplanning.production_planning.Models;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 
 @Entity
 public class Inspection {
@@ -13,7 +12,7 @@ public class Inspection {
     @GenericGenerator(name="system-uuid",strategy = "uuid")
     String inspectionId;
 
-    Timestamp dateTime;
+    String dateTime;
 
     @ManyToOne
     private Employee empId;
@@ -24,7 +23,7 @@ public class Inspection {
     @OneToOne
     private OrderItem orderItemId;
 
-    public Inspection(Timestamp dateTime, Employee empId, InspectionStatus inspectionStatus, OrderItem orderItemId) {
+    public Inspection(String dateTime, Employee empId, InspectionStatus inspectionStatus, OrderItem orderItemId) {
         this.dateTime = dateTime;
         this.empId = empId;
         this.inspectionStatus = inspectionStatus;
@@ -40,11 +39,11 @@ public class Inspection {
         this.inspectionId = inspectionId;
     }
 
-    public Timestamp getDateTime() {
+    public String getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(Timestamp dateTime) {
+    public void setDateTime(String dateTime) {
         this.dateTime = dateTime;
     }
 

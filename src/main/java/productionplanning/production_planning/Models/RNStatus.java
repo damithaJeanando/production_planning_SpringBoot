@@ -29,6 +29,14 @@ public class RNStatus {
         this.rejectionNotices = rejectionNotices;
     }
 
+    public String getRnStatus_id() {
+        return rnStatus_id;
+    }
+
+    public void setRnStatus_id(String rnStatus_id) {
+        this.rnStatus_id = rnStatus_id;
+    }
+
     public String getRnStatus() {
         return rnStatus;
     }

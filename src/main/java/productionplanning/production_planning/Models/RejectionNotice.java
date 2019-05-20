@@ -13,7 +13,7 @@ public class RejectionNotice {
     @GenericGenerator(name="system-uuid",strategy = "uuid")
     private String rejectionNoticeId;
 
-    private String getRejectionReason;
+    private String rejectionReason;
     private Date noticeDate;
     private String remedyAction;
 
@@ -23,9 +23,9 @@ public class RejectionNotice {
     @ManyToOne
     private RNStatus rnStatus;
 
-    public RejectionNotice(String getRejectionReason, Date noticeDate, String remedyAction, OrderItem orderItemId,
+    public RejectionNotice(String rejectionReason, Date noticeDate, String remedyAction, OrderItem orderItemId,
                            RNStatus rnStatus) {
-        this.getRejectionReason = getRejectionReason;
+        this.rejectionReason = rejectionReason;
         this.noticeDate = noticeDate;
         this.remedyAction = remedyAction;
         this.orderItemId = orderItemId;
@@ -40,12 +40,12 @@ public class RejectionNotice {
         this.rejectionNoticeId = rejectionNoticeId;
     }
 
-    public String getGetRejectionReason() {
-        return getRejectionReason;
+    public String getRejectionReason() {
+        return rejectionReason;
     }
 
-    public void setGetRejectionReason(String getRejectionReason) {
-        this.getRejectionReason = getRejectionReason;
+    public void setRejectionReason(String rejectionReason) {
+        this.rejectionReason = rejectionReason;
     }
 
     public Date getNoticeDate() {
