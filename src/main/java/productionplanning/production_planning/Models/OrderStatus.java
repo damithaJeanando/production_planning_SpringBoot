@@ -1,23 +1,40 @@
 package productionplanning.production_planning.Models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.Set;
 
 @Entity
 public class OrderStatus {
 
+    @Id
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name="system-uuid",strategy = "uuid")
+    private String orderStatusId;
+
     private String orderStatus;
 
-    @OneToMany(mappedBy = "orderStatus")
-    @JsonIgnoreProperties("orderStatus")
+    @OneToMany(mappedBy = "orderStatusId")
+    @JsonIgnoreProperties("orderStatusId")
     private Set<OrderItem> orderItems;
 
-    public OrderStatus(String orderStatus, Set<OrderItem> orderItems) {
+    public OrderStatus(String orderStatusId, String orderStatus, Set<OrderItem> orderItems) {
+        this.orderStatusId = orderStatusId;
         this.orderStatus = orderStatus;
         this.orderItems = orderItems;
+    }
+
+    public String getOrderStatusId() {
+        return orderStatusId;
+    }
+
+    public void setOrderStatusId(String orderStatusId) {
+        this.orderStatusId = orderStatusId;
     }
 
     public String getOrderStatus() {

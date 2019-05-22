@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import java.util.Set;
 
 @Entity
 public class LeaveType {
@@ -18,12 +19,11 @@ public class LeaveType {
 
     private String leaveType;
 
-    @OneToMany(mappedBy = "leaveType")
-    @JsonIgnoreProperties("leaveType")
-    private WorkSchedule workSchedule;
+    @OneToMany(mappedBy = "leaveTypeId")
+    @JsonIgnoreProperties("leaveTypeId")
+    private Set<WorkSchedule> workSchedule;
 
-    public LeaveType(String leaveTypeId, String leaveType, WorkSchedule workSchedule) {
-        this.leaveTypeId = leaveTypeId;
+    public LeaveType(String leaveType, Set<WorkSchedule> workSchedule) {
         this.leaveType = leaveType;
         this.workSchedule = workSchedule;
     }
@@ -36,10 +36,6 @@ public class LeaveType {
         this.leaveTypeId = leaveTypeId;
     }
 
-    public LeaveType(String leaveType) {
-        this.leaveType = leaveType;
-    }
-
     public String getLeaveType() {
         return leaveType;
     }
@@ -48,11 +44,11 @@ public class LeaveType {
         this.leaveType = leaveType;
     }
 
-    public WorkSchedule getWorkSchedule() {
+    public Set<WorkSchedule> getWorkSchedule() {
         return workSchedule;
     }
 
-    public void setWorkSchedule(WorkSchedule workSchedule) {
+    public void setWorkSchedule(Set<WorkSchedule> workSchedule) {
         this.workSchedule = workSchedule;
     }
 }

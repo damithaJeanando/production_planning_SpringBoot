@@ -15,7 +15,7 @@ public class OrderItem {
     private int quantity;
 
     @ManyToOne
-    private Order orderId;
+    private OrderSales orderSalesId;
 
     @OneToOne
     private Inspection inspectionId;
@@ -24,14 +24,14 @@ public class OrderItem {
     private Product productId;
 
     @ManyToOne
-    private OrderStatus orderStatus;
+    private OrderStatus orderStatusId;
 
-    public OrderItem(int quantity, Order orderId, Inspection inspectionId, Product productId, OrderStatus orderStatus) {
+    public OrderItem(int quantity, OrderSales orderSalesId, Inspection inspectionId, Product productId, OrderStatus orderStatusId) {
         this.quantity = quantity;
-        this.orderId = orderId;
+        this.orderSalesId = orderSalesId;
         this.inspectionId = inspectionId;
         this.productId = productId;
-        this.orderStatus = orderStatus;
+        this.orderStatusId = orderStatusId;
     }
 
     public String getOrderItemId() {
@@ -50,12 +50,12 @@ public class OrderItem {
         this.quantity = quantity;
     }
 
-    public Order getOrderId() {
-        return orderId;
+    public OrderSales getOrderSalesId() {
+        return orderSalesId;
     }
 
-    public void setOrderId(Order orderId) {
-        this.orderId = orderId;
+    public void setOrderSalesId(OrderSales orderSalesId) {
+        this.orderSalesId = orderSalesId;
     }
 
     public Inspection getInspectionId() {
@@ -74,11 +74,11 @@ public class OrderItem {
         this.productId = productId;
     }
 
-    public OrderStatus getOrderStatus() {
-        return orderStatus;
+    public OrderStatus getOrderStatusId() {
+        return orderStatusId;
     }
 
-    public void setOrderStatus(OrderStatus orderStatus) {
-        this.orderStatus = orderStatus;
+    public void setOrderStatusId(OrderStatus orderStatusId) {
+        this.orderStatusId = orderStatusId;
     }
 }

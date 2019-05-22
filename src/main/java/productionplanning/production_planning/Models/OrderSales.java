@@ -8,22 +8,22 @@ import java.util.Date;
 import java.util.Set;
 
 @Entity
-public class Order {
+public class OrderSales {
 
     @Id
     @GeneratedValue(generator = "system-uuid")
     @GenericGenerator(name="system-uuid",strategy = "uuid")
-    private String orderId;
+    private String orderSalesId;
 
     private Date orderDeadline;
     private Date startDate;
     private Date endDate;
 
-    @OneToMany(mappedBy = "orderId")
-    @JsonIgnoreProperties("orderId")
+    @OneToMany(mappedBy = "orderSalesId")
+    @JsonIgnoreProperties("orderSalesId")
     private Set<OrderItem> orderItems;
 
-    public Order(Date orderDeadline, Date startDate, Date endDate, Set<OrderItem> orderItems) {
+    public OrderSales(Date orderDeadline, Date startDate, Date endDate, Set<OrderItem> orderItems) {
         this.orderDeadline = orderDeadline;
         this.startDate = startDate;
         this.endDate = endDate;
@@ -31,12 +31,12 @@ public class Order {
 
     }
 
-    public String getOrderId() {
-        return orderId;
+    public String getOrderSalesId() {
+        return orderSalesId;
     }
 
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
+    public void setOrderSalesId(String orderSalesId) {
+        this.orderSalesId = orderSalesId;
     }
 
     public Date getOrderDeadline() {

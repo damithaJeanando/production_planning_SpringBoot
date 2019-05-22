@@ -34,6 +34,9 @@ public class Employee {
     @JsonIgnoreProperties("empId")
     private Set<Inspection> inspections;
 
+    public Employee() {
+    }
+
     public Employee(String name, Date dob, String address, int contactNum, String empType, String username,
                     String password, Set<WorkSchedule> workSchedules, Set<Inspection> inspections) {
         this.name = name;

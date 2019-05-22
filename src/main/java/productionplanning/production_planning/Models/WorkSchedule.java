@@ -29,19 +29,19 @@ public class WorkSchedule {
     private CapacityPlan planId;
 
     @ManyToOne
-    private LeaveType leaveType;
+    private LeaveType leaveTypeId;
 
     @ManyToOne
     private OrderItem orderItemId;
 
     public WorkSchedule(String startTime, String endTime, Date date, Employee empId,
-                        CapacityPlan planId, LeaveType leaveType, OrderItem orderItemId) {
+                        CapacityPlan planId, LeaveType leaveTypeId, OrderItem orderItemId) {
         this.startTime = startTime;
         this.endTime = endTime;
         this.date = date;
         this.empId = empId;
         this.planId = planId;
-        this.leaveType = leaveType;
+        this.leaveTypeId = leaveTypeId;
         this.orderItemId = orderItemId;
     }
 
@@ -93,12 +93,12 @@ public class WorkSchedule {
         this.planId = planId;
     }
 
-    public LeaveType getLeaveType() {
-        return leaveType;
+    public LeaveType getLeaveTypeId() {
+        return leaveTypeId;
     }
 
-    public void setLeaveType(LeaveType leaveType) {
-        this.leaveType = leaveType;
+    public void setLeaveTypeId(LeaveType leaveTypeId) {
+        this.leaveTypeId = leaveTypeId;
     }
 
     public OrderItem getOrderItemId() {

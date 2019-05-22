@@ -2,7 +2,7 @@ package productionplanning.production_planning.Controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import productionplanning.production_planning.Models.Order;
+import productionplanning.production_planning.Models.OrderSales;
 import productionplanning.production_planning.Repositories.OrderRepository;
 
 @RestController
@@ -13,28 +13,28 @@ public class OrderController {
     private OrderRepository orderRepository;
 
     @GetMapping(path = "/order")
-    public @ResponseBody Iterable<Order> getOrders(){
+    public @ResponseBody Iterable<OrderSales> getOrders(){
         System.out.println("get orders");
         return orderRepository.findAll();
     }
 
     @GetMapping(path = "/{order_id}")
-    public Order getOrder(@PathVariable String order_id){
+    public OrderSales getOrder(@PathVariable String order_id){
 
         return orderRepository.findById(order_id).get();
     }
 
     @PostMapping(path = "/new_order")
-    public Order newOrder(@RequestBody Order order){
+    public OrderSales newOrder(@RequestBody OrderSales orderSales){
 
 
-        return orderRepository.save(order);
+        return orderRepository.save(orderSales);
     }
 
     @PutMapping
-    public void updateOrder(@RequestBody Order order){
+    public void updateOrder(@RequestBody OrderSales orderSales){
 
-        orderRepository.save(order);
+        orderRepository.save(orderSales);
 
     }
 

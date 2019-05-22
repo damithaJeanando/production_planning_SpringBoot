@@ -19,8 +19,8 @@ public class BIStatus {
 
     private String billItemStatus;
 
-    @OneToMany(mappedBy = "billItemStatus")
-    @JsonIgnoreProperties("billItemStatus")
+    @OneToMany(mappedBy = "biStatus")
+    @JsonIgnoreProperties("biStatus")
     private Set<BillItem> billItems;
 
     public BIStatus(String biStatusId, String billItemStatus, Set<BillItem> billItems) {

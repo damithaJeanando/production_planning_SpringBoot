@@ -15,14 +15,14 @@ public class PDItem {
     private int quantity;
 
     @ManyToOne
-    private ProductDesign productDesign;
+    private ProductDesign designId;
 
     @OneToOne
     private RawMaterials materialId;
 
-    public PDItem(int quantity, ProductDesign productDesign, RawMaterials materialId) {
+    public PDItem(int quantity, ProductDesign designId, RawMaterials materialId) {
         this.quantity = quantity;
-        this.productDesign = productDesign;
+        this.designId = designId;
         this.materialId = materialId;
     }
 
@@ -42,12 +42,12 @@ public class PDItem {
         this.quantity = quantity;
     }
 
-    public ProductDesign getProductDesign() {
-        return productDesign;
+    public ProductDesign getDesignId() {
+        return designId;
     }
 
-    public void setProductDesign(ProductDesign productDesign) {
-        this.productDesign = productDesign;
+    public void setDesignId(ProductDesign designId) {
+        this.designId = designId;
     }
 
     public RawMaterials getMaterialId() {
