@@ -15,7 +15,7 @@ public class OrderItem {
     private int quantity;
 
     @ManyToOne
-    private OrderSales orderSalesId;
+    private SalesOrder salesOrderId;
 
     @OneToOne
     private Inspection inspectionId;
@@ -26,9 +26,9 @@ public class OrderItem {
     @ManyToOne
     private OrderStatus orderStatusId;
 
-    public OrderItem(int quantity, OrderSales orderSalesId, Inspection inspectionId, Product productId, OrderStatus orderStatusId) {
+    public OrderItem(int quantity, SalesOrder salesOrderId, Inspection inspectionId, Product productId, OrderStatus orderStatusId) {
         this.quantity = quantity;
-        this.orderSalesId = orderSalesId;
+        this.salesOrderId = salesOrderId;
         this.inspectionId = inspectionId;
         this.productId = productId;
         this.orderStatusId = orderStatusId;
@@ -50,12 +50,12 @@ public class OrderItem {
         this.quantity = quantity;
     }
 
-    public OrderSales getOrderSalesId() {
-        return orderSalesId;
+    public SalesOrder getSalesOrderId() {
+        return salesOrderId;
     }
 
-    public void setOrderSalesId(OrderSales orderSalesId) {
-        this.orderSalesId = orderSalesId;
+    public void setSalesOrderId(SalesOrder salesOrderId) {
+        this.salesOrderId = salesOrderId;
     }
 
     public Inspection getInspectionId() {
