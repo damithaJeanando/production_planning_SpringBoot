@@ -23,11 +23,7 @@ public class RNStatus {
     @JsonIgnoreProperties("rnStatus")
     private Set<RejectionNotice> rejectionNotices;
 
-    public RNStatus(String rnStatus_id, String rnStatus, Set<RejectionNotice> rejectionNotices) {
-        this.rnStatus_id = rnStatus_id;
-        this.rnStatus = rnStatus;
-        this.rejectionNotices = rejectionNotices;
-    }
+
 
     public String getRnStatus_id() {
         return rnStatus_id;

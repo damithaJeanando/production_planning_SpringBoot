@@ -23,14 +23,7 @@ public class RejectionNotice {
     @ManyToOne
     private RNStatus rnStatus;
 
-    public RejectionNotice(String rejectionReason, Date noticeDate, String remedyAction, OrderItem orderItemId,
-                           RNStatus rnStatus) {
-        this.rejectionReason = rejectionReason;
-        this.noticeDate = noticeDate;
-        this.remedyAction = remedyAction;
-        this.orderItemId = orderItemId;
-        this.rnStatus = rnStatus;
-    }
+
 
     public String getRejectionNoticeId() {
         return rejectionNoticeId;

@@ -24,12 +24,7 @@ public class BOM {
     @JsonIgnoreProperties("bomId")
     private Set<BillItem> billItems;
 
-    public BOM(String bomId, Date createdDate, OrderItem orderItemId, Set<BillItem> billItems) {
-        this.bomId = bomId;
-        this.createdDate = createdDate;
-        this.orderItemId = orderItemId;
-        this.billItems = billItems;
-    }
+
 
     public String getBomId() {
         return bomId;

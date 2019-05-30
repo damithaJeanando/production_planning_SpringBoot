@@ -23,10 +23,7 @@ public class LeaveType {
     @JsonIgnoreProperties("leaveTypeId")
     private Set<WorkSchedule> workSchedule;
 
-    public LeaveType(String leaveType, Set<WorkSchedule> workSchedule) {
-        this.leaveType = leaveType;
-        this.workSchedule = workSchedule;
-    }
+
 
     public String getLeaveTypeId() {
         return leaveTypeId;

@@ -23,11 +23,7 @@ public class ProductDesign {
     @JsonIgnoreProperties("designId")
     private Set<PDItem> pdItems;
 
-    public ProductDesign(int requiredWorkHours, Product productId, Set<PDItem> pdItems) {
-        this.requiredWorkHours = requiredWorkHours;
-        this.productId = productId;
-        this.pdItems = pdItems;
-    }
+
 
     public String getDesignId() {
         return designId;

@@ -23,12 +23,7 @@ public class BillItem {
     @ManyToOne
     private BIStatus biStatus;
 
-    public BillItem(int quantity, RawMaterials materialId, BOM bomId, BIStatus biStatus) {
-        this.quantity = quantity;
-        this.materialId = materialId;
-        this.bomId = bomId;
-        this.biStatus = biStatus;
-    }
+
 
     public String getBillItemId() {
         return billItemId;

@@ -34,16 +34,6 @@ public class WorkSchedule {
     @ManyToOne
     private OrderItem orderItemId;
 
-    public WorkSchedule(String startTime, String endTime, Date date, Employee empId,
-                        CapacityPlan planId, LeaveType leaveTypeId, OrderItem orderItemId) {
-        this.startTime = startTime;
-        this.endTime = endTime;
-        this.date = date;
-        this.empId = empId;
-        this.planId = planId;
-        this.leaveTypeId = leaveTypeId;
-        this.orderItemId = orderItemId;
-    }
 
     public String getScheduleId() {
         return scheduleId;

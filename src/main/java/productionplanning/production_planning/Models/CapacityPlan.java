@@ -25,10 +25,7 @@ public class CapacityPlan {
     @JsonIgnoreProperties("planId")
     private Set<WorkSchedule> workSchedules;
 
-    public CapacityPlan(Date startDate, Date endDate, Set<WorkSchedule> workSchedules) {
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.workSchedules = workSchedules;
+    public CapacityPlan() {
     }
 
     public String getPlanId() {

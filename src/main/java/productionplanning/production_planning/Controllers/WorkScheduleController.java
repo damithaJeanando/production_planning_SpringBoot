@@ -3,6 +3,7 @@ package productionplanning.production_planning.Controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import productionplanning.production_planning.Models.WorkSchedule;
+import productionplanning.production_planning.Repositories.CapacityPlanRepository;
 import productionplanning.production_planning.Repositories.WorkScheduleRepository;
 
 @RestController
@@ -11,6 +12,9 @@ public class WorkScheduleController {
 
     @Autowired
     private WorkScheduleRepository workScheduleRepository;
+
+    @Autowired
+    private CapacityPlanRepository capacityPlanRepository;
 
     @GetMapping(path = "/allworkschedules")
     public @ResponseBody Iterable<WorkSchedule> getAllWorkSchedules() {
@@ -22,6 +26,14 @@ public class WorkScheduleController {
     public WorkSchedule getWorkSchedule(@PathVariable String ws_id){
 
         return workScheduleRepository.findById(ws_id).get();
+    }
+
+    @GetMapping(path = "view-capacity-plan/{planId}")
+    public Iterable<WorkSchedule> findByPlanId(@PathVariable String planId){
+
+        Iterable<WorkSchedule> workSchedule = workScheduleRepository.findAllByPlanId(capacityPlanRepository.findById(planId).get());
+        System.out.println("workshedule hit");
+        return workSchedule;
     }
 
     @PostMapping(path = "/new_ws")

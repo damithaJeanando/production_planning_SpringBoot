@@ -20,11 +20,7 @@ public class PDItem {
     @OneToOne
     private RawMaterials materialId;
 
-    public PDItem(int quantity, ProductDesign designId, RawMaterials materialId) {
-        this.quantity = quantity;
-        this.designId = designId;
-        this.materialId = materialId;
-    }
+
 
     public String getDesignItemId() {
         return designItemId;

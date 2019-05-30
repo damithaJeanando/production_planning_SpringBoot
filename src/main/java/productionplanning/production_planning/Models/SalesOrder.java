@@ -23,13 +23,7 @@ public class SalesOrder {
     @JsonIgnoreProperties("salesOrderId")
     private Set<OrderItem> orderItems;
 
-    public SalesOrder(Date orderDeadline, Date startDate, Date endDate, Set<OrderItem> orderItems) {
-        this.orderDeadline = orderDeadline;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.orderItems = orderItems;
 
-    }
 
     public String getSalesOrderId() {
         return salesOrderId;

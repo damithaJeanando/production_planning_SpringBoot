@@ -23,11 +23,7 @@ public class InspectionStatus {
     @JsonIgnoreProperties("inspectionStatus")
     private Set<Inspection> inspections;
 
-    public InspectionStatus(String isId, String inspectionStatus, Set<Inspection> inspections) {
-        this.isId = isId;
-        this.inspectionStatus = inspectionStatus;
-        this.inspections = inspections;
-    }
+
 
     public String getIsId() {
         return isId;

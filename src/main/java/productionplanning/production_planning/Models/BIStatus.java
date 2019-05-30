@@ -23,11 +23,7 @@ public class BIStatus {
     @JsonIgnoreProperties("biStatus")
     private Set<BillItem> billItems;
 
-    public BIStatus(String biStatusId, String billItemStatus, Set<BillItem> billItems) {
-        this.biStatusId = biStatusId;
-        this.billItemStatus = billItemStatus;
-        this.billItems = billItems;
-    }
+
 
     public String getBiStatusId() {
         return biStatusId;

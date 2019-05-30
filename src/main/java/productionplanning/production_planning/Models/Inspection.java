@@ -23,13 +23,7 @@ public class Inspection {
     @OneToOne
     private OrderItem orderItemId;
 
-    public Inspection(String dateTime, Employee empId, InspectionStatus inspectionStatus, OrderItem orderItemId) {
-        this.dateTime = dateTime;
-        this.empId = empId;
-        this.inspectionStatus = inspectionStatus;
-        this.orderItemId = orderItemId;
 
-    }
 
     public String getInspectionId() {
         return inspectionId;

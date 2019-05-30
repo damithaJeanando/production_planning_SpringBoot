@@ -16,10 +16,6 @@ public class RawMaterials {
 
     private int quantity;
 
-    public RawMaterials(String materialId, int quantity) {
-        this.materialId = materialId;
-        this.quantity = quantity;
-    }
 
     public String getMaterialId() {
         return materialId;

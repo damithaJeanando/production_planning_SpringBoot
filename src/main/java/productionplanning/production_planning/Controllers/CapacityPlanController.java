@@ -24,6 +24,7 @@ public class CapacityPlanController {
         return capacityPlanRepository.findById(capacity_plan_id).get();
     }
 
+
     @PostMapping(path = "/new_capacity_plan")
     public CapacityPlan newCapacityPlan(@RequestBody CapacityPlan capacityPlan){
 

@@ -23,11 +23,6 @@ public class OrderStatus {
     @JsonIgnoreProperties("orderStatusId")
     private Set<OrderItem> orderItems;
 
-    public OrderStatus(String orderStatusId, String orderStatus, Set<OrderItem> orderItems) {
-        this.orderStatusId = orderStatusId;
-        this.orderStatus = orderStatus;
-        this.orderItems = orderItems;
-    }
 
     public String getOrderStatusId() {
         return orderStatusId;

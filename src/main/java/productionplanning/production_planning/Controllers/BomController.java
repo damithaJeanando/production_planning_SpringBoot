@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import productionplanning.production_planning.Models.BOM;
 import productionplanning.production_planning.Repositories.BomRepository;
+import productionplanning.production_planning.Repositories.OrderItemRepository;
 
 @RestController
 @RequestMapping(value = "/BOM")
@@ -11,6 +12,9 @@ public class BomController {
 
     @Autowired
     private BomRepository bomRepository;
+
+    @Autowired
+    private OrderItemRepository orderItemRepository;
 
     @GetMapping(path = "/bom")
     public @ResponseBody Iterable<BOM> getBOMs(){
@@ -22,6 +26,14 @@ public class BomController {
     public BOM getBOM(@PathVariable String bom_id){
 
         return bomRepository.findById(bom_id).get();
+    }
+
+    @GetMapping(path = "/order-item/{orderItemId}")
+    public BOM findByOrderItemId(@PathVariable String orderItemId){
+
+        BOM bom = bomRepository.findByOrderItemId(orderItemRepository.findById(orderItemId).get()).get();
+
+        return bom;
     }
 
     @PostMapping(path = "/new_bom")

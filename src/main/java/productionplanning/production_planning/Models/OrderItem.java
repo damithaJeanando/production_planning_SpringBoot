@@ -26,13 +26,6 @@ public class OrderItem {
     @ManyToOne
     private OrderStatus orderStatusId;
 
-    public OrderItem(int quantity, SalesOrder salesOrderId, Inspection inspectionId, Product productId, OrderStatus orderStatusId) {
-        this.quantity = quantity;
-        this.salesOrderId = salesOrderId;
-        this.inspectionId = inspectionId;
-        this.productId = productId;
-        this.orderStatusId = orderStatusId;
-    }
 
     public String getOrderItemId() {
         return orderItemId;

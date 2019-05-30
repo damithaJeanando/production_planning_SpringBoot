@@ -23,11 +23,7 @@ public class Product {
     @JsonIgnoreProperties("productId")
     private Set<OrderItem> orderItems;
 
-    public Product(String productId, String productName, Set<OrderItem> orderItems) {
-        this.productId = productId;
-        this.productName = productName;
-        this.orderItems = orderItems;
-    }
+
 
     public String getProductId() {
         return productId;
