@@ -24,7 +24,7 @@ public class BOM {
     @JsonIgnoreProperties("bomId")
     private Set<BillItem> billItems;
 
-
+    private String bomStatus;
 
     public String getBomId() {
         return bomId;
@@ -56,5 +56,13 @@ public class BOM {
 
     public void setBillItems(Set<BillItem> billItems) {
         this.billItems = billItems;
+    }
+
+    public String getBomStatus() {
+        return bomStatus;
+    }
+
+    public void setBomStatus(String bomStatus) {
+        this.bomStatus = bomStatus;
     }
 }

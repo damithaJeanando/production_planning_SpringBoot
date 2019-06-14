@@ -20,8 +20,7 @@ public class RejectionNotice {
     @OneToOne
     private OrderItem orderItemId;
 
-    @ManyToOne
-    private RNStatus rnStatus;
+    private String rnStatus;
 
 
 
@@ -65,11 +64,11 @@ public class RejectionNotice {
         this.orderItemId = orderItemId;
     }
 
-    public RNStatus getRnStatus() {
+    public String getRnStatus() {
         return rnStatus;
     }
 
-    public void setRnStatus(RNStatus rnStatus) {
+    public void setRnStatus(String rnStatus) {
         this.rnStatus = rnStatus;
     }
 }

@@ -23,6 +23,8 @@ public class SalesOrder {
     @JsonIgnoreProperties("salesOrderId")
     private Set<OrderItem> orderItems;
 
+    private String completionDate;
+    private String orderStatus;
 
 
     public String getSalesOrderId() {
@@ -63,5 +65,21 @@ public class SalesOrder {
 
     public void setOrderItems(Set<OrderItem> orderItems) {
         this.orderItems = orderItems;
+    }
+
+    public String getCompletionDate() {
+        return completionDate;
+    }
+
+    public void setCompletionDate(String completionDate) {
+        this.completionDate = completionDate;
+    }
+
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
     }
 }

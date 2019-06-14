@@ -20,8 +20,7 @@ public class BillItem {
     @ManyToOne
     private BOM bomId;
 
-    @ManyToOne
-    private BIStatus biStatus;
+
 
 
 
@@ -57,11 +56,5 @@ public class BillItem {
         this.bomId = bomId;
     }
 
-    public BIStatus getBiStatus() {
-        return biStatus;
-    }
 
-    public void setBiStatus(BIStatus biStatus) {
-        this.biStatus = biStatus;
-    }
 }

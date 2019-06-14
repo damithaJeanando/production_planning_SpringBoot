@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>productionplanning.production_planning.Models.ProductDesign</OriginalElement>
+  <nodes>
+    <node x="3555.560627104377" y="4107.0">productionplanning.production_planning.Repositories.LeaveTypeRepository</node>
+    <node x="2809.154166666667" y="152.0">productionplanning.production_planning.Models.CapacityPlan</node>
+    <node x="3137.1503968253974" y="4107.0">productionplanning.production_planning.Repositories.RejectionNoticeRepository</node>
+    <node x="699.25" y="4107.0">productionplanning.production_planning.Repositories.ProductDesignRepository</node>
+    <node x="1612.0000000000002" y="4567.0">productionplanning.production_planning.Controllers.BillItemController</node>
+    <node x="2507.55" y="2013.0">productionplanning.production_planning.Models.Inspection</node>
+    <node x="2540.841666666667" y="1206.0">productionplanning.production_planning.Models.Employee</node>
+    <node x="3967.5621482683973" y="4567.0">productionplanning.production_planning.Controllers.EmployeeController</node>
+    <node x="4611.562148268398" y="4545.0">productionplanning.production_planning.Controllers.WorkScheduleController</node>
+    <node x="382.5" y="4107.0">productionplanning.production_planning.Repositories.PDItemRepository</node>
+    <node x="2210.941666666667" y="3295.5">org.springframework.data.repository.Repository</node>
+    <node x="4660.519354256852" y="3735.5">org.springframework.stereotype.Repository</node>
+    <node x="1337.5000000000002" y="4107.0">productionplanning.production_planning.Repositories.SalesOrderRepository</node>
+    <node x="2251.9144841269845" y="0.0">javax.persistence.Entity</node>
+    <node x="3758.5621482683973" y="4107.0">productionplanning.production_planning.Repositories.InspectionRepository</node>
+    <node x="2240.905952380953" y="4107.0">productionplanning.production_planning.Repositories.OrderItemRepository</node>
+    <node x="3186.4003968253974" y="3097.0">productionplanning.production_planning.Models.RejectionNotice</node>
+    <node x="4068.3121482683973" y="4107.0">productionplanning.production_planning.Repositories.EmployeeRepository</node>
+    <node x="3655.5621482683973" y="4567.0">productionplanning.production_planning.Controllers.InspectionController</node>
+    <node x="1868.2750000000003" y="4096.0">productionplanning.production_planning.Repositories.BomRepository</node>
+    <node x="2965.2317911255404" y="4567.0">productionplanning.production_planning.Controllers.RejectionNoticeController</node>
+    <node x="2601.154166666667" y="577.0">productionplanning.production_planning.Models.WorkSchedule</node>
+    <node x="2418.905952380953" y="4096.0">org.springframework.web.bind.annotation.RestController</node>
+    <node x="4642.519354256852" y="4107.0">productionplanning.production_planning.Repositories.CapacityPlanRepository</node>
+    <node x="2478.6677699615198" y="4567.0">productionplanning.production_planning.Controllers.OrderItemController</node>
+    <node x="879.01598124098" y="2079.0">productionplanning.production_planning.Models.Product</node>
+    <node x="4273.562148268397" y="4567.0">productionplanning.production_planning.Controllers.CapacityPlanController</node>
+    <node x="1048.2500000000002" y="4107.0">productionplanning.production_planning.Repositories.ProductRepository</node>
+    <node x="1299.0000000000002" y="4567.0">productionplanning.production_planning.Controllers.SalesOrderController</node>
+    <node x="2575.905952380953" y="4019.0">org.springframework.web.bind.annotation.RequestMapping</node>
+    <node x="339.0" y="4567.0">productionplanning.production_planning.Controllers.PDItemController</node>
+    <node x="275.125" y="3614.0">productionplanning.production_planning.Models.PDItem</node>
+    <node x="2058.441666666667" y="3625.5">org.springframework.data.repository.CrudRepository</node>
+    <node x="449.77490981240817" y="3163.0">productionplanning.production_planning.Models.ProductDesign</node>
+    <node x="2489.154166666667" y="185.0">productionplanning.production_planning.Models.LeaveType</node>
+    <node x="2044.941666666667" y="3295.5">org.springframework.data.repository.NoRepositoryBean</node>
+    <node x="1646.7500000000002" y="4107.0">productionplanning.production_planning.Repositories.BillItemRepository</node>
+    <node x="2101.4363756613766" y="2798.5">org.springframework.stereotype.Indexed</node>
+    <node x="41.5" y="4107.0">productionplanning.production_planning.Repositories.RawMaterialsRepository</node>
+    <node x="655.0" y="4567.0">productionplanning.production_planning.Controllers.ProductDesignController</node>
+    <node x="1540.0000000000002" y="3614.0">productionplanning.production_planning.Models.BillItem</node>
+    <node x="1630.6428571428573" y="3130.0">productionplanning.production_planning.Models.BOM</node>
+    <node x="0.0" y="4567.0">productionplanning.production_planning.Controllers.RawMaterialsController</node>
+    <node x="221.25" y="3229.0">productionplanning.production_planning.Models.RawMaterials</node>
+    <node x="1013.0000000000002" y="4567.0">productionplanning.production_planning.Controllers.ProductController</node>
+    <node x="4835.519354256852" y="4096.0">productionplanning.production_planning.Repositories.WorkScheduleRepository</node>
+    <node x="2138.1320556758055" y="4545.0">productionplanning.production_planning.Controllers.BomController</node>
+    <node x="2327.441666666667" y="2600.0">productionplanning.production_planning.Models.OrderItem</node>
+    <node x="2120.4144841269845" y="1947.0">productionplanning.production_planning.Models.SalesOrder</node>
+    <node x="3344.5621482683973" y="4567.0">productionplanning.production_planning.Controllers.LeaveTypeController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="productionplanning.production_planning.Controllers.EmployeeController" target="productionplanning.production_planning.Repositories.EmployeeRepository">
+      <point x="35.75" y="-81.5" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.WorkScheduleController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="-66.39999999999998" y="-103.5" />
+      <point x="4711.162148268398" y="4245.0" />
+      <point x="2780.3345238095244" y="4245.0" />
+      <point x="98.42857142857156" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.CapacityPlanRepository" target="org.springframework.stereotype.Repository">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.ProductRepository" target="productionplanning.production_planning.Models.Product">
+      <point x="-36.5" y="-15.0" />
+      <point x="1084.7500000000002" y="2570.0" />
+      <point x="993.20348124098" y="2570.0" />
+      <point x="-16.3125" y="114.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.EmployeeController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="-107.25" y="-81.5" />
+      <point x="4003.3121482683973" y="4295.0" />
+      <point x="2531.441666666667" y="4295.0" />
+      <point x="44.03571428571422" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.ProductController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="99.75" y="-81.5" />
+      <point x="1245.7500000000002" y="4485.0" />
+      <point x="2628.905952380953" y="4485.0" />
+      <point x="-53.0" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.CapacityPlan" target="productionplanning.production_planning.Models.WorkSchedule">
+      <point x="0.0" y="147.5" />
+      <point x="2961.654166666667" y="557.0" />
+      <point x="2825.931944444445" y="557.0" />
+      <point x="105.77777777777783" y="-279.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.ProductDesignController" target="productionplanning.production_planning.Repositories.ProductDesignRepository">
+      <point x="-42.25" y="-81.5" />
+      <point x="781.75" y="4375.0" />
+      <point x="790.25" y="4375.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.WorkScheduleRepository" target="productionplanning.production_planning.Models.WorkSchedule">
+      <point x="44.875" y="-26.0" />
+      <point x="5059.894354256852" y="3999.0" />
+      <point x="5065.187148268398" y="3999.0" />
+      <point x="5065.187148268398" y="1176.0" />
+      <point x="2794.529166666667" y="1176.0" />
+      <point x="74.375" y="279.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.SalesOrderRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="40.0" y="-15.0" />
+      <point x="1457.5000000000002" y="3979.0" />
+      <point x="2143.2988095238097" y="3979.0" />
+      <point x="-47.14285714285734" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.ProductController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="33.25" y="-81.5" />
+      <point x="1179.2500000000002" y="4415.0" />
+      <point x="2453.155952380953" y="4415.0" />
+      <point x="-34.25" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.RejectionNoticeRepository" target="productionplanning.production_planning.Models.RejectionNotice">
+      <point x="47.0" y="-15.0" />
+      <point x="3278.1503968253974" y="3594.0" />
+      <point x="3246.6503968253974" y="3594.0" />
+      <point x="-60.25" y="213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.OrderItemController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="36.0" y="-81.5" />
+      <point x="2658.6677699615198" y="4525.0" />
+      <point x="2689.4773809523813" y="4525.0" />
+      <point x="7.5714285714284415" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.WorkScheduleController" target="productionplanning.production_planning.Repositories.CapacityPlanRepository">
+      <point x="0.0" y="-103.5" />
+      <point x="4777.562148268398" y="4525.0" />
+      <point x="4772.269354256852" y="4525.0" />
+      <point x="43.25" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.ProductController" target="productionplanning.production_planning.Models.Product">
+      <point x="-99.75" y="-81.5" />
+      <point x="1046.2500000000002" y="4375.0" />
+      <point x="1037.7500000000002" y="4375.0" />
+      <point x="1037.7500000000002" y="2580.0" />
+      <point x="960.57848124098" y="2580.0" />
+      <point x="-48.9375" y="114.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.WorkScheduleController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="-132.8" y="-103.5" />
+      <point x="4644.762148268398" y="4255.0" />
+      <point x="2551.0130952380955" y="4255.0" />
+      <point x="63.60714285714266" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.Employee" target="productionplanning.production_planning.Models.WorkSchedule">
+      <point x="-61.0" y="-345.5" />
+      <point x="2632.341666666667" y="1186.0" />
+      <point x="2675.529166666667" y="1186.0" />
+      <point x="-44.625" y="279.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.RejectionNotice" target="javax.persistence.Entity">
+      <point x="80.33333333333348" y="-213.5" />
+      <point x="3387.233730158731" y="72.0" />
+      <point x="2385.9501984126987" y="72.0" />
+      <point x="64.53571428571422" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.EmployeeRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-52.0" y="-15.0" />
+      <point x="4094.3121482683973" y="3959.0" />
+      <point x="2275.29880952381" y="3959.0" />
+      <point x="84.85714285714312" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.RawMaterialsRepository" target="productionplanning.production_planning.Models.RawMaterials">
+      <point x="-43.5" y="-15.0" />
+      <point x="85.0" y="3594.0" />
+      <point x="271.25" y="3594.0" />
+      <point x="-50.0" y="81.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.SalesOrderController" target="productionplanning.production_planning.Models.SalesOrder">
+      <point x="-109.875" y="-81.5" />
+      <point x="1335.6250000000002" y="4375.0" />
+      <point x="1327.0000000000002" y="4375.0" />
+      <point x="1327.0000000000002" y="2570.0" />
+      <point x="2142.1644841269845" y="2570.0" />
+      <point x="-108.75" y="246.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.BomRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="106.33333333333348" y="-26.0" />
+      <point x="2134.1083333333336" y="3999.0" />
+      <point x="2181.0130952380955" y="3999.0" />
+      <point x="-9.428571428571558" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.BomController" target="productionplanning.production_planning.Repositories.OrderItemRepository">
+      <point x="0.0" y="-103.5" />
+      <point x="2282.1320556758055" y="4375.0" />
+      <point x="2280.405952380953" y="4375.0" />
+      <point x="-39.5" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.BillItem" target="javax.persistence.Entity">
+      <point x="-34.14285714285734" y="-147.5" />
+      <point x="1625.357142857143" y="3594.0" />
+      <point x="1620.1428571428573" y="3594.0" />
+      <point x="1620.1428571428573" y="112.0" />
+      <point x="2296.593055555556" y="112.0" />
+      <point x="-24.82142857142844" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.RejectionNoticeController" target="productionplanning.production_planning.Models.RejectionNotice">
+      <point x="132.0" y="-81.5" />
+      <point x="3273.2317911255404" y="4525.0" />
+      <point x="3335.6503968253974" y="4525.0" />
+      <point x="3335.6503968253974" y="3594.0" />
+      <point x="3367.1503968253974" y="3594.0" />
+      <point x="60.25" y="213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.WorkScheduleRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-134.625" y="-26.0" />
+      <point x="4880.394354256852" y="3939.0" />
+      <point x="2313.0130952380955" y="3939.0" />
+      <point x="122.57142857142844" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.LeaveTypeRepository" target="productionplanning.production_planning.Models.LeaveType">
+      <point x="40.000000000000114" y="-15.0" />
+      <point x="3675.560627104377" y="497.0" />
+      <point x="2764.154166666667" y="497.0" />
+      <point x="125.0" y="114.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.SalesOrderRepository" target="productionplanning.production_planning.Models.SalesOrder">
+      <point x="-40.0" y="-15.0" />
+      <point x="1377.5000000000002" y="2580.0" />
+      <point x="2185.6644841269845" y="2580.0" />
+      <point x="-65.25" y="246.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.PDItemRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="35.75" y="-15.0" />
+      <point x="489.75" y="3949.0" />
+      <point x="2086.7273809523813" y="3949.0" />
+      <point x="-103.71428571428578" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.WorkSchedule" target="javax.persistence.Entity">
+      <point x="-105.77777777777783" y="-279.5" />
+      <point x="2614.3763888888893" y="557.0" />
+      <point x="2478.654166666667" y="557.0" />
+      <point x="2478.654166666667" y="102.0" />
+      <point x="2356.1644841269845" y="102.0" />
+      <point x="34.75" y="26.0" />
+    </edge>
+    <edge source="org.springframework.data.repository.Repository" target="org.springframework.stereotype.Indexed">
+      <point x="0.0" y="-15.0" />
+      <point x="2262.941666666667" y="3047.0" />
+      <point x="2145.9363756613766" y="3047.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.ProductDesignController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="126.75" y="-81.5" />
+      <point x="950.75" y="4475.0" />
+      <point x="2613.7630952380955" y="4475.0" />
+      <point x="-68.14285714285734" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.LeaveType" target="javax.persistence.Entity">
+      <point x="0.0" y="-114.5" />
+      <point x="2639.154166666667" y="92.0" />
+      <point x="2366.093055555556" y="92.0" />
+      <point x="44.67857142857156" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.ProductDesignController" target="productionplanning.production_planning.Models.ProductDesign">
+      <point x="-126.75" y="-81.5" />
+      <point x="697.25" y="4375.0" />
+      <point x="688.75" y="4375.0" />
+      <point x="688.75" y="3594.0" />
+      <point x="627.5249098124082" y="3594.0" />
+      <point x="59.25" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.InspectionController" target="productionplanning.production_planning.Repositories.InspectionRepository">
+      <point x="36.50000000000023" y="-81.5" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.BillItemController" target="productionplanning.production_planning.Repositories.BillItemRepository">
+      <point x="-32.75" y="-81.5" />
+      <point x="1710.2500000000002" y="4375.0" />
+      <point x="1718.7500000000002" y="4375.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.RawMaterialsRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="43.5" y="-15.0" />
+      <point x="172.0" y="3939.0" />
+      <point x="2067.8702380952386" y="3939.0" />
+      <point x="-122.57142857142844" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.EmployeeController" target="productionplanning.production_planning.Models.Employee">
+      <point x="107.25" y="-81.5" />
+      <point x="4217.812148268397" y="4525.0" />
+      <point x="4276.254169672921" y="4525.0" />
+      <point x="4276.254169672921" y="1917.0" />
+      <point x="2820.4250000000006" y="1917.0" />
+      <point x="127.08333333333348" y="345.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.OrderItem" target="productionplanning.production_planning.Models.Product">
+      <point x="-95.20000000000005" y="-213.5" />
+      <point x="2351.241666666667" y="2550.0" />
+      <point x="1058.45348124098" y="2550.0" />
+      <point x="48.9375" y="114.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.ProductController" target="productionplanning.production_planning.Repositories.ProductRepository">
+      <point x="-33.25" y="-81.5" />
+      <point x="1112.7500000000002" y="4375.0" />
+      <point x="1121.2500000000002" y="4375.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.OrderItem" target="productionplanning.production_planning.Models.SalesOrder">
+      <point x="-31.73333333333335" y="-213.5" />
+      <point x="2414.708333333334" y="2510.0" />
+      <point x="2272.6644841269845" y="2510.0" />
+      <point x="21.75" y="246.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.SalesOrder" target="javax.persistence.Entity">
+      <point x="0.0" y="-246.5" />
+      <point x="2250.9144841269845" y="132.0" />
+      <point x="2316.4501984126987" y="132.0" />
+      <point x="-4.964285714285779" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.BillItemController" target="productionplanning.production_planning.Models.BillItem">
+      <point x="-98.25" y="-81.5" />
+      <point x="1644.7500000000002" y="4375.0" />
+      <point x="1636.2500000000002" y="4375.0" />
+      <point x="1636.2500000000002" y="3929.0" />
+      <point x="1599.7500000000002" y="3929.0" />
+      <point x="-59.75" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.PDItemController" target="productionplanning.production_planning.Repositories.PDItemRepository">
+      <point x="-37.0" y="-81.5" />
+      <point x="450.0" y="4375.0" />
+      <point x="454.0" y="4375.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.InspectionController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="-36.49999999999977" y="-81.5" />
+      <point x="3765.062148268398" y="4305.0" />
+      <point x="2734.905952380953" y="4305.0" />
+      <point x="53.0" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.SalesOrder" target="productionplanning.production_planning.Models.OrderItem">
+      <point x="65.25" y="246.5" />
+      <point x="2316.1644841269845" y="2500.0" />
+      <point x="2430.5750000000003" y="2500.0" />
+      <point x="-15.866666666666788" y="-213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.LeaveTypeController" target="productionplanning.production_planning.Repositories.LeaveTypeRepository">
+      <point x="109.125" y="-81.5" />
+      <point x="3599.1871482683973" y="4525.0" />
+      <point x="3635.560627104377" y="4525.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.ProductDesign" target="productionplanning.production_planning.Models.Product">
+      <point x="79.0" y="-147.5" />
+      <point x="647.2749098124082" y="3077.0" />
+      <point x="640.0446458633971" y="3077.0" />
+      <point x="640.0446458633971" y="2580.0" />
+      <point x="927.95348124098" y="2580.0" />
+      <point x="-81.5625" y="114.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.RejectionNoticeController" target="productionplanning.production_planning.Repositories.RejectionNoticeRepository">
+      <point x="44.0" y="-81.5" />
+      <point x="3185.2317911255404" y="4525.0" />
+      <point x="3231.1503968253974" y="4525.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.RawMaterials" target="javax.persistence.Entity">
+      <point x="0.0" y="-81.5" />
+      <point x="321.25" y="82.0" />
+      <point x="2266.807341269842" y="82.0" />
+      <point x="-54.60714285714266" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.CapacityPlanController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="-119.25" y="-81.5" />
+      <point x="4313.312148268397" y="4275.0" />
+      <point x="2541.2273809523813" y="4275.0" />
+      <point x="53.82142857142844" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.BillItemRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="36.0" y="-15.0" />
+      <point x="1754.7500000000002" y="3989.0" />
+      <point x="2162.155952380953" y="3989.0" />
+      <point x="-28.28571428571422" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.InspectionController" target="productionplanning.production_planning.Models.Inspection">
+      <point x="109.50000000000023" y="-81.5" />
+      <point x="3911.062148268398" y="4525.0" />
+      <point x="3969.5041696729213" y="4525.0" />
+      <point x="3969.5041696729213" y="2570.0" />
+      <point x="2722.05" y="2570.0" />
+      <point x="97.5" y="180.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.InspectionRepository" target="productionplanning.production_planning.Models.Inspection">
+      <point x="39.75" y="-15.0" />
+      <point x="3877.8121482683973" y="2580.0" />
+      <point x="2683.05" y="2580.0" />
+      <point x="58.5" y="180.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.WorkScheduleRepository" target="productionplanning.production_planning.Models.CapacityPlan">
+      <point x="134.625" y="-26.0" />
+      <point x="5149.644354256852" y="3999.0" />
+      <point x="5095.879169672921" y="3999.0" />
+      <point x="5095.879169672921" y="467.0" />
+      <point x="3092.3684523809525" y="467.0" />
+      <point x="130.71428571428578" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.InspectionRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-39.75" y="-15.0" />
+      <point x="3798.3121482683973" y="3969.0" />
+      <point x="2256.441666666667" y="3969.0" />
+      <point x="66.0" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.PDItem" target="productionplanning.production_planning.Models.RawMaterials">
+      <point x="-34.285714285714675" y="-147.5" />
+      <point x="360.8392857142853" y="3594.0" />
+      <point x="337.9166666666665" y="3594.0" />
+      <point x="16.666666666666515" y="81.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.LeaveTypeController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="-36.375" y="-81.5" />
+      <point x="3453.6871482683973" y="4325.0" />
+      <point x="2719.7630952380955" y="4325.0" />
+      <point x="37.85714285714266" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.Inspection" target="productionplanning.production_planning.Models.Employee">
+      <point x="0.0" y="-180.5" />
+      <point x="2624.55" y="1927.0" />
+      <point x="2617.091666666667" y="1927.0" />
+      <point x="-76.25" y="345.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.SalesOrderController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="36.625" y="-81.5" />
+      <point x="1482.1250000000002" y="4425.0" />
+      <point x="2462.941666666667" y="4425.0" />
+      <point x="-24.46428571428578" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.BOM" target="productionplanning.production_planning.Models.BillItem">
+      <point x="-19.5" y="180.5" />
+      <point x="68.28571428571422" y="-147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.WorkSchedule" target="productionplanning.production_planning.Models.LeaveType">
+      <point x="-52.888888888888914" y="-279.5" />
+      <point x="2667.2652777777785" y="537.0" />
+      <point x="2564.154166666667" y="537.0" />
+      <point x="-75.0" y="114.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.CapacityPlanRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-57.66666666666663" y="-15.0" />
+      <point x="4671.352687590186" y="3949.0" />
+      <point x="2294.155952380953" y="3949.0" />
+      <point x="103.71428571428578" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.ProductRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="36.5" y="-15.0" />
+      <point x="1157.7500000000002" y="3969.0" />
+      <point x="2124.441666666667" y="3969.0" />
+      <point x="-66.0" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.ProductDesignController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="42.25" y="-81.5" />
+      <point x="866.25" y="4405.0" />
+      <point x="2443.3702380952386" y="4405.0" />
+      <point x="-44.03571428571422" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.ProductDesignRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="45.5" y="-15.0" />
+      <point x="835.75" y="3959.0" />
+      <point x="2105.5845238095244" y="3959.0" />
+      <point x="-84.85714285714266" y="136.0" />
+    </edge>
+    <edge source="org.springframework.data.repository.CrudRepository" target="org.springframework.data.repository.NoRepositoryBean">
+      <point x="-66.0" y="-136.0" />
+      <point x="2124.441666666667" y="3594.0" />
+      <point x="2117.941666666667" y="3594.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.RejectionNotice" target="productionplanning.production_planning.Models.OrderItem">
+      <point x="-80.33333333333348" y="-213.5" />
+      <point x="3226.567063492064" y="3067.0" />
+      <point x="2514.441666666667" y="3067.0" />
+      <point x="68.0" y="213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.RawMaterialsController" target="productionplanning.production_planning.Repositories.RawMaterialsRepository">
+      <point x="-39.875" y="-81.5" />
+      <point x="119.625" y="4525.0" />
+      <point x="128.5" y="4525.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.CapacityPlanController" target="productionplanning.production_planning.Repositories.CapacityPlanRepository">
+      <point x="119.25" y="-81.5" />
+      <point x="4551.812148268397" y="4525.0" />
+      <point x="4685.769354256852" y="4525.0" />
+      <point x="-43.25" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.ProductDesignRepository" target="productionplanning.production_planning.Models.ProductDesign">
+      <point x="-45.5" y="-15.0" />
+      <point x="744.75" y="3584.0" />
+      <point x="667.0249098124082" y="3584.0" />
+      <point x="98.75" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.Employee" target="productionplanning.production_planning.Models.Inspection">
+      <point x="-25.416666666666742" y="345.5" />
+      <point x="2667.925" y="1927.0" />
+      <point x="2671.3500000000004" y="1927.0" />
+      <point x="46.799999999999955" y="-180.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.CapacityPlanController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="-39.75" y="-81.5" />
+      <point x="4392.812148268397" y="4265.0" />
+      <point x="2765.191666666667" y="4265.0" />
+      <point x="83.28571428571422" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.LeaveType" target="productionplanning.production_planning.Models.WorkSchedule">
+      <point x="-25.0" y="114.5" />
+      <point x="2614.154166666667" y="527.0" />
+      <point x="2693.709722222223" y="527.0" />
+      <point x="-26.444444444444343" y="-279.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.WorkScheduleRepository" target="org.springframework.stereotype.Repository">
+      <point x="-44.875" y="-26.0" />
+      <point x="4970.144354256852" y="3929.0" />
+      <point x="4774.686020923519" y="3929.0" />
+      <point x="45.66666666666663" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.Product" target="javax.persistence.Entity">
+      <point x="0.0" y="-114.5" />
+      <point x="1009.51598124098" y="102.0" />
+      <point x="2286.6644841269845" y="102.0" />
+      <point x="-34.75" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.PDItemController" target="productionplanning.production_planning.Models.PDItem">
+      <point x="-111.0" y="-81.5" />
+      <point x="376.0" y="4375.0" />
+      <point x="372.0" y="4375.0" />
+      <point x="372.0" y="3929.0" />
+      <point x="335.125" y="3929.0" />
+      <point x="-60.0" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.LeaveTypeRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-40.0" y="-15.0" />
+      <point x="3595.560627104377" y="3979.0" />
+      <point x="2237.5845238095244" y="3979.0" />
+      <point x="47.14285714285734" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.PDItem" target="javax.persistence.Entity">
+      <point x="-102.85714285714312" y="-147.5" />
+      <point x="292.2678571428569" y="3574.0" />
+      <point x="210.75" y="3574.0" />
+      <point x="210.75" y="72.0" />
+      <point x="2256.8787698412702" y="72.0" />
+      <point x="-64.53571428571422" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.RawMaterialsController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="39.875" y="-81.5" />
+      <point x="199.375" y="4385.0" />
+      <point x="2423.79880952381" y="4385.0" />
+      <point x="-63.60714285714266" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.InspectionController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="-109.49999999999977" y="-81.5" />
+      <point x="3692.062148268398" y="4315.0" />
+      <point x="2521.655952380953" y="4315.0" />
+      <point x="34.25" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.PDItemController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="37.0" y="-81.5" />
+      <point x="524.0" y="4395.0" />
+      <point x="2433.5845238095244" y="4395.0" />
+      <point x="-53.82142857142844" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.RawMaterialsController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="119.625" y="-81.5" />
+      <point x="279.125" y="4455.0" />
+      <point x="2583.4773809523813" y="4455.0" />
+      <point x="-98.42857142857156" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.EmployeeRepository" target="productionplanning.production_planning.Models.Employee">
+      <point x="0.0" y="-15.0" />
+      <point x="4146.312148268397" y="1927.0" />
+      <point x="2769.591666666667" y="1927.0" />
+      <point x="76.25" y="345.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.PDItemController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="111.0" y="-81.5" />
+      <point x="598.0" y="4465.0" />
+      <point x="2598.6202380952386" y="4465.0" />
+      <point x="-83.28571428571422" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.WorkSchedule" target="productionplanning.production_planning.Models.CapacityPlan">
+      <point x="26.444444444444343" y="-279.5" />
+      <point x="2746.5986111111115" y="527.0" />
+      <point x="2830.939880952381" y="527.0" />
+      <point x="-130.71428571428578" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.Employee" target="javax.persistence.Entity">
+      <point x="-122.0" y="-345.5" />
+      <point x="2571.341666666667" y="1156.0" />
+      <point x="2461.82876984127" y="1156.0" />
+      <point x="2461.82876984127" y="112.0" />
+      <point x="2346.235912698413" y="112.0" />
+      <point x="24.82142857142844" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.BomController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="57.59999999999991" y="-103.5" />
+      <point x="2339.7320556758054" y="4445.0" />
+      <point x="2482.5130952380955" y="4445.0" />
+      <point x="-4.892857142857338" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.RejectionNoticeController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="-44.0" y="-81.5" />
+      <point x="3097.2317911255404" y="4345.0" />
+      <point x="2704.6202380952386" y="4345.0" />
+      <point x="22.71428571428578" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.BillItem" target="productionplanning.production_planning.Models.BOM">
+      <point x="0.0" y="-147.5" />
+      <point x="1659.5000000000002" y="3594.0" />
+      <point x="1650.1428571428573" y="3594.0" />
+      <point x="-97.5" y="180.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.WorkScheduleController" target="productionplanning.production_planning.Repositories.WorkScheduleRepository">
+      <point x="66.39999999999998" y="-103.5" />
+      <point x="4843.962148268398" y="4515.0" />
+      <point x="5015.019354256852" y="4515.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.PDItemRepository" target="productionplanning.production_planning.Models.PDItem">
+      <point x="-35.75" y="-15.0" />
+      <point x="418.25" y="3929.0" />
+      <point x="455.125" y="3929.0" />
+      <point x="60.0" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.WorkSchedule" target="productionplanning.production_planning.Models.Employee">
+      <point x="14.875" y="279.5" />
+      <point x="2735.029166666667" y="1186.0" />
+      <point x="2754.341666666667" y="1186.0" />
+      <point x="61.0" y="-345.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.OrderItemController" target="productionplanning.production_planning.Repositories.OrderItemRepository">
+      <point x="-108.0" y="-81.5" />
+      <point x="2514.6677699615198" y="4375.0" />
+      <point x="2359.405952380953" y="4375.0" />
+      <point x="39.5" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.BomController" target="productionplanning.production_planning.Repositories.BomRepository">
+      <point x="-57.59999999999991" y="-103.5" />
+      <point x="2224.5320556758056" y="4365.0" />
+      <point x="2027.7750000000003" y="4365.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.SalesOrderController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="109.875" y="-81.5" />
+      <point x="1555.3750000000002" y="4495.0" />
+      <point x="2644.04880952381" y="4495.0" />
+      <point x="-37.85714285714266" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.LeaveTypeController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="-109.125" y="-81.5" />
+      <point x="3380.9371482683973" y="4335.0" />
+      <point x="2511.8702380952386" y="4335.0" />
+      <point x="24.46428571428578" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.CapacityPlanRepository" target="productionplanning.production_planning.Models.CapacityPlan">
+      <point x="57.666666666666515" y="-15.0" />
+      <point x="4786.686020923519" y="3999.0" />
+      <point x="4813.312148268398" y="3999.0" />
+      <point x="4813.312148268398" y="477.0" />
+      <point x="3048.797023809524" y="477.0" />
+      <point x="87.14285714285722" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.BillItemController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="32.75" y="-81.5" />
+      <point x="1775.7500000000002" y="4435.0" />
+      <point x="2472.7273809523813" y="4435.0" />
+      <point x="-14.678571428571558" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.Inspection" target="productionplanning.production_planning.Models.OrderItem">
+      <point x="-19.5" y="180.5" />
+      <point x="2605.05" y="2570.0" />
+      <point x="2541.641666666667" y="2570.0" />
+      <point x="95.19999999999982" y="-213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.BomRepository" target="productionplanning.production_planning.Models.BOM">
+      <point x="-106.33333333333348" y="-26.0" />
+      <point x="1921.4416666666668" y="3929.0" />
+      <point x="1945.739285714286" y="3929.0" />
+      <point x="1945.739285714286" y="3584.0" />
+      <point x="1845.1428571428573" y="3584.0" />
+      <point x="97.5" y="180.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.BomController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="115.19999999999982" y="-103.5" />
+      <point x="2397.3320556758053" y="4515.0" />
+      <point x="2674.3345238095244" y="4515.0" />
+      <point x="-7.5714285714284415" y="103.0" />
+    </edge>
+    <edge source="org.springframework.data.repository.CrudRepository" target="org.springframework.data.repository.Repository">
+      <point x="66.0" y="-136.0" />
+      <point x="2256.441666666667" y="3594.0" />
+      <point x="2262.941666666667" y="3594.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.CapacityPlanController" target="productionplanning.production_planning.Models.CapacityPlan">
+      <point x="39.75" y="-81.5" />
+      <point x="4472.312148268397" y="487.0" />
+      <point x="3005.2255952380956" y="487.0" />
+      <point x="43.57142857142867" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.BOM" target="javax.persistence.Entity">
+      <point x="-78.0" y="-180.5" />
+      <point x="1669.6428571428573" y="3077.0" />
+      <point x="1693.0446458633971" y="3077.0" />
+      <point x="1693.0446458633971" y="122.0" />
+      <point x="2306.521626984127" y="122.0" />
+      <point x="-14.892857142857338" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.RejectionNoticeController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="-132.0" y="-81.5" />
+      <point x="3009.2317911255404" y="4355.0" />
+      <point x="2502.0845238095244" y="4355.0" />
+      <point x="14.678571428571558" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.OrderItemRepository" target="productionplanning.production_planning.Models.OrderItem">
+      <point x="39.5" y="-15.0" />
+      <point x="2359.405952380953" y="3999.0" />
+      <point x="2446.441666666667" y="3999.0" />
+      <point x="0.0" y="213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.EmployeeRepository" target="org.springframework.stereotype.Repository">
+      <point x="52.0" y="-15.0" />
+      <point x="4198.312148268397" y="3999.0" />
+      <point x="4683.352687590186" y="3999.0" />
+      <point x="-45.66666666666663" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.CapacityPlan" target="javax.persistence.Entity">
+      <point x="0.0" y="-147.5" />
+      <point x="2961.654166666667" y="82.0" />
+      <point x="2376.021626984127" y="82.0" />
+      <point x="54.60714285714266" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.BomRepository" target="productionplanning.production_planning.Models.OrderItem">
+      <point x="0.0" y="-26.0" />
+      <point x="2027.7750000000003" y="3929.0" />
+      <point x="1956.739285714286" y="3929.0" />
+      <point x="1956.739285714286" y="3077.0" />
+      <point x="2412.441666666667" y="3077.0" />
+      <point x="-34.0" y="213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.ProductDesign" target="productionplanning.production_planning.Models.PDItem">
+      <point x="19.75" y="147.5" />
+      <point x="588.0249098124082" y="3594.0" />
+      <point x="497.9821428571431" y="3594.0" />
+      <point x="102.85714285714312" y="-147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.BomController" target="productionplanning.production_planning.Models.BOM">
+      <point x="-115.19999999999982" y="-103.5" />
+      <point x="2166.9320556758057" y="4375.0" />
+      <point x="1857.7750000000003" y="4375.0" />
+      <point x="1857.7750000000003" y="3594.0" />
+      <point x="1806.1428571428573" y="3594.0" />
+      <point x="58.5" y="180.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.BillItemController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="98.25" y="-81.5" />
+      <point x="1841.2500000000002" y="4505.0" />
+      <point x="2659.191666666667" y="4505.0" />
+      <point x="-22.71428571428578" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.LeaveTypeController" target="productionplanning.production_planning.Models.LeaveType">
+      <point x="36.375" y="-81.5" />
+      <point x="3526.4371482683973" y="507.0" />
+      <point x="2714.154166666667" y="507.0" />
+      <point x="75.0" y="114.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.OrderItemController" target="org.springframework.web.bind.annotation.RestController">
+      <point x="-36.0" y="-81.5" />
+      <point x="2586.6677699615198" y="4365.0" />
+      <point x="2492.29880952381" y="4365.0" />
+      <point x="4.892857142857338" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.SalesOrderController" target="productionplanning.production_planning.Repositories.SalesOrderRepository">
+      <point x="-36.625" y="-81.5" />
+      <point x="1408.8750000000002" y="4375.0" />
+      <point x="1417.5000000000002" y="4375.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.EmployeeController" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="-35.75" y="-81.5" />
+      <point x="4074.8121482683973" y="4285.0" />
+      <point x="2750.04880952381" y="4285.0" />
+      <point x="68.14285714285734" y="103.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.Inspection" target="javax.persistence.Entity">
+      <point x="-93.60000000000014" y="-180.5" />
+      <point x="2530.9500000000003" y="1927.0" />
+      <point x="2436.3644841269843" y="1927.0" />
+      <point x="2436.3644841269843" y="122.0" />
+      <point x="2336.307341269842" y="122.0" />
+      <point x="14.892857142857338" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.RawMaterialsController" target="productionplanning.production_planning.Models.RawMaterials">
+      <point x="-119.625" y="-81.5" />
+      <point x="39.875" y="4525.0" />
+      <point x="31.0" y="4525.0" />
+      <point x="31.0" y="3584.0" />
+      <point x="237.91666666666652" y="3584.0" />
+      <point x="-83.33333333333348" y="81.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.WorkSchedule" target="productionplanning.production_planning.Models.OrderItem">
+      <point x="-104.125" y="279.5" />
+      <point x="2616.029166666667" y="1166.0" />
+      <point x="2402.9144841269845" y="1166.0" />
+      <point x="2402.9144841269845" y="2470.0" />
+      <point x="2478.175" y="2470.0" />
+      <point x="31.73333333333312" y="-213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.PDItem" target="productionplanning.production_planning.Models.ProductDesign">
+      <point x="0.0" y="-147.5" />
+      <point x="395.125" y="3564.0" />
+      <point x="469.52490981240817" y="3564.0" />
+      <point x="-98.75" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.BOM" target="productionplanning.production_planning.Models.OrderItem">
+      <point x="0.0" y="-180.5" />
+      <point x="1747.6428571428573" y="3057.0" />
+      <point x="2344.441666666667" y="3057.0" />
+      <point x="-102.0" y="213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.ProductDesign" target="javax.persistence.Entity">
+      <point x="-79.0" y="-147.5" />
+      <point x="489.27490981240817" y="3077.0" />
+      <point x="523.2749098124082" y="3077.0" />
+      <point x="523.2749098124082" y="92.0" />
+      <point x="2276.735912698413" y="92.0" />
+      <point x="-44.67857142857156" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.OrderItem" target="javax.persistence.Entity">
+      <point x="15.866666666666788" y="-213.5" />
+      <point x="2462.308333333334" y="2480.0" />
+      <point x="2391.9144841269845" y="2480.0" />
+      <point x="2391.9144841269845" y="132.0" />
+      <point x="2326.3787698412702" y="132.0" />
+      <point x="4.964285714285779" y="26.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.BillItemRepository" target="productionplanning.production_planning.Models.BillItem">
+      <point x="-36.0" y="-15.0" />
+      <point x="1682.7500000000002" y="3929.0" />
+      <point x="1719.2500000000002" y="3929.0" />
+      <point x="59.75" y="147.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.OrderItemController" target="productionplanning.production_planning.Models.OrderItem">
+      <point x="108.0" y="-81.5" />
+      <point x="2730.6677699615198" y="4525.0" />
+      <point x="2886.7702380952387" y="4525.0" />
+      <point x="2886.7702380952387" y="3077.0" />
+      <point x="2480.441666666667" y="3077.0" />
+      <point x="34.0" y="213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.BillItem" target="productionplanning.production_planning.Models.RawMaterials">
+      <point x="-102.42857142857156" y="-147.5" />
+      <point x="1557.0714285714287" y="3554.0" />
+      <point x="371.25" y="3554.0" />
+      <point x="50.0" y="81.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.Product" target="productionplanning.production_planning.Models.OrderItem">
+      <point x="114.1875" y="114.5" />
+      <point x="1123.70348124098" y="2530.0" />
+      <point x="2382.9750000000004" y="2530.0" />
+      <point x="-63.4666666666667" y="-213.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.OrderItemRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-39.5" y="-15.0" />
+      <point x="2280.405952380953" y="3999.0" />
+      <point x="2199.8702380952386" y="3999.0" />
+      <point x="9.428571428571558" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Controllers.WorkScheduleController" target="productionplanning.production_planning.Models.WorkSchedule">
+      <point x="132.80000000000018" y="-103.5" />
+      <point x="4910.3621482683975" y="4525.0" />
+      <point x="5205.019354256852" y="4525.0" />
+      <point x="5205.019354256852" y="1166.0" />
+      <point x="2824.279166666667" y="1166.0" />
+      <point x="104.125" y="279.5" />
+    </edge>
+    <edge source="productionplanning.production_planning.Repositories.RejectionNoticeRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-47.0" y="-15.0" />
+      <point x="3184.1503968253974" y="3989.0" />
+      <point x="2218.7273809523813" y="3989.0" />
+      <point x="28.28571428571422" y="136.0" />
+    </edge>
+    <edge source="productionplanning.production_planning.Models.OrderItem" target="productionplanning.production_planning.Models.Inspection">
+      <point x="63.4666666666667" y="-213.5" />
+      <point x="2509.9083333333338" y="2550.0" />
+      <point x="2527.05" y="2550.0" />
+      <point x="-97.5" y="180.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.07606873428331937" x="2603.0" y="2376.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

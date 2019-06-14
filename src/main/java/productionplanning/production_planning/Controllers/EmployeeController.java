@@ -12,7 +12,6 @@ public class EmployeeController {
     @Autowired
     private EmployeeRepository employeeRepository;
 
-
     @GetMapping(path = "/allemployees")
     public @ResponseBody Iterable<Employee> getAllEmployee(){
         System.out.println("Get all employees");

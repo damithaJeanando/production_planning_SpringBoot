@@ -23,8 +23,7 @@ public class OrderItem {
     @ManyToOne
     private Product productId;
 
-    @ManyToOne
-    private OrderStatus orderStatusId;
+    private String orderItemStatus;
 
 
     public String getOrderItemId() {
@@ -67,11 +66,11 @@ public class OrderItem {
         this.productId = productId;
     }
 
-    public OrderStatus getOrderStatusId() {
-        return orderStatusId;
+    public String getOrderItemStatus() {
+        return orderItemStatus;
     }
 
-    public void setOrderStatusId(OrderStatus orderStatusId) {
-        this.orderStatusId = orderStatusId;
+    public void setOrderItemStatus(String orderItemStatus) {
+        this.orderItemStatus = orderItemStatus;
     }
 }

@@ -17,8 +17,8 @@ public class Inspection {
     @ManyToOne
     private Employee empId;
 
-    @ManyToOne
-    private InspectionStatus inspectionStatus;
+    private String inspectionStatus;
+
 
     @OneToOne
     private OrderItem orderItemId;
@@ -49,11 +49,11 @@ public class Inspection {
         this.empId = empId;
     }
 
-    public InspectionStatus getInspectionStatus() {
+    public String getInspectionStatus() {
         return inspectionStatus;
     }
 
-    public void setInspectionStatus(InspectionStatus inspectionStatus) {
+    public void setInspectionStatus(String inspectionStatus) {
         this.inspectionStatus = inspectionStatus;
     }
 

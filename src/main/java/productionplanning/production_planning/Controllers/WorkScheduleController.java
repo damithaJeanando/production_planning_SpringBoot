@@ -31,7 +31,8 @@ public class WorkScheduleController {
     @GetMapping(path = "view-capacity-plan/{planId}")
     public Iterable<WorkSchedule> findByPlanId(@PathVariable String planId){
 
-        Iterable<WorkSchedule> workSchedule = workScheduleRepository.findAllByPlanId(capacityPlanRepository.findById(planId).get());
+        Iterable<WorkSchedule> workSchedule = workScheduleRepository.findAllByPlanId(capacityPlanRepository.
+                findById(planId).get());
         System.out.println("workshedule hit");
         return workSchedule;
     }
