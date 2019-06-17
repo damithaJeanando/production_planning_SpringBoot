@@ -1,7 +1,6 @@
 package productionplanning.production_planning.Models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -10,29 +9,33 @@ import java.util.Set;
 @Entity
 public class SalesOrder {
 
+
+//    @GeneratedValue(generator = "system-uuid")
+//    @GenericGenerator(name="system-uuid",strategy = "uuid")
     @Id
-    @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name="system-uuid",strategy = "uuid")
-    private String salesOrderId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int ord_id;
 
     private Date orderDeadline;
-    private Date startDate;
-    private Date endDate;
+    private Date date;
+    private Date dele_date;
 
     @OneToMany(mappedBy = "salesOrderId")
     @JsonIgnoreProperties("salesOrderId")
-    private Set<OrderItem> orderItems;
+    private Set<OrderItem> products;
 
     private String completionDate;
     private String orderStatus;
 
-
-    public String getSalesOrderId() {
-        return salesOrderId;
+    public SalesOrder() {
     }
 
-    public void setSalesOrderId(String salesOrderId) {
-        this.salesOrderId = salesOrderId;
+    public int getOrd_id() {
+        return ord_id;
+    }
+
+    public void setOrd_id(int ord_id) {
+        this.ord_id = ord_id;
     }
 
     public Date getOrderDeadline() {
@@ -43,28 +46,28 @@ public class SalesOrder {
         this.orderDeadline = orderDeadline;
     }
 
-    public Date getStartDate() {
-        return startDate;
+    public Date getDate() {
+        return date;
     }
 
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    public Date getEndDate() {
-        return endDate;
+    public Date getDele_date() {
+        return dele_date;
     }
 
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
+    public void setDele_date(Date dele_date) {
+        this.dele_date = dele_date;
     }
 
-    public Set<OrderItem> getOrderItems() {
-        return orderItems;
+    public Set<OrderItem> getProducts() {
+        return products;
     }
 
-    public void setOrderItems(Set<OrderItem> orderItems) {
-        this.orderItems = orderItems;
+    public void setProducts(Set<OrderItem> products) {
+        this.products = products;
     }
 
     public String getCompletionDate() {

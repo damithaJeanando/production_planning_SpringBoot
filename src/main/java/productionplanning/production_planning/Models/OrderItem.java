@@ -1,20 +1,23 @@
 package productionplanning.production_planning.Models;
 
-import org.hibernate.annotations.GenericGenerator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 
 @Entity
 public class OrderItem {
 
+
+//    @GeneratedValue(generator = "system-uuid")
+//    @GenericGenerator(name="system-uuid",strategy = "uuid")
     @Id
-    @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name="system-uuid",strategy = "uuid")
-    private String orderItemId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int orderItemId;
 
     private int quantity;
 
     @ManyToOne
+    @JsonIgnoreProperties("products")
     private SalesOrder salesOrderId;
 
     @OneToOne
@@ -26,11 +29,11 @@ public class OrderItem {
     private String orderItemStatus;
 
 
-    public String getOrderItemId() {
+    public int getOrderItemId() {
         return orderItemId;
     }
 
-    public void setOrderItemId(String orderItemId) {
+    public void setOrderItemId(int orderItemId) {
         this.orderItemId = orderItemId;
     }
 

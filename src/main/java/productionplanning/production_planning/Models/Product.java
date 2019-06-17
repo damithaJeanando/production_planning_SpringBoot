@@ -1,10 +1,8 @@
 package productionplanning.production_planning.Models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import java.util.Set;
@@ -12,10 +10,11 @@ import java.util.Set;
 @Entity
 public class Product {
 
+//
+//    @GeneratedValue(generator = "system-uuid")
+//    @GenericGenerator(name="system-uuid",strategy = "uuid")
     @Id
-    @GeneratedValue(generator = "system-uuid")
-    @GenericGenerator(name="system-uuid",strategy = "uuid")
-    private String productId;
+    private int productId;
 
     private String productName;
 
@@ -25,11 +24,11 @@ public class Product {
 
 
 
-    public String getProductId() {
+    public int getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 

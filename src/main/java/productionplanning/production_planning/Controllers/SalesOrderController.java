@@ -19,7 +19,7 @@ public class SalesOrderController {
     }
 
     @GetMapping(path = "/{order_id}")
-    public SalesOrder getOrder(@PathVariable String order_id){
+    public SalesOrder getOrder(@PathVariable int order_id){
 
         return salesOrderRepository.findById(order_id).get();
     }
@@ -39,7 +39,7 @@ public class SalesOrderController {
     }
 
     @DeleteMapping(path = "/{order_id}")
-    public void deleteOrder(@PathVariable String order_id) {
+    public void deleteOrder(@PathVariable int order_id) {
 
         salesOrderRepository.deleteById(order_id);
     }

@@ -29,7 +29,7 @@ public class BomController {
     }
 
     @GetMapping(path = "/order-item/{orderItemId}")
-    public BOM findByOrderItemId(@PathVariable String orderItemId){
+    public BOM findByOrderItemId(@PathVariable int orderItemId){
 
         BOM bom = bomRepository.findByOrderItemId(orderItemRepository.findById(orderItemId).get()).get();
 

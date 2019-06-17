@@ -1,5 +1,6 @@
 package productionplanning.production_planning.Models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -18,6 +19,7 @@ public class BillItem {
     private RawMaterials materialId;
 
     @ManyToOne
+    @JsonIgnoreProperties("billItems")
     private BOM bomId;
 
 
